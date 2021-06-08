@@ -16,26 +16,29 @@
   <body>
     <div class="container">
       <header>
-        <h1>freeCodeCamp Survey Form</h1>
-        <p class="slogan">Thank you for taking the time to help us improve the platform</p>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p class="slogan" id="description">Thank you for taking the time to help us improve the platform</p>
       </header>
       <main>
-        <form>
+        <form id="survey-form">
           <div class="form-element">
-            <label for="name" class="ques">Name</label><br>
-            <input type="text" id="name" name="name" class=shadow-box><br>
+            <label for="name" class="ques" id="name-label">Name</label><br>
+            <input type="text" id="name" name="name" class=shadow-box
+              placeholder="Enter your name" required><br>
           </div>
           <div class="form-element">
-            <label for="email" class="ques">Email</label><br>
-            <input type="email" id="email" name="email" class=shadow-box><br>
+            <label for="email" class="ques" id="email-label">Email</label><br>
+            <input type="email" id="email" name="email" class=shadow-box
+              placeholder="Enter your Email" required><br>
           </div>
           <div class="form-element">
-            <label for="age" class="ques">Age <span style="font-size: smaller">(optional)</span></label><br>
-            <input type="number" id="age" name="age" class=shadow-box><br>
+            <label for="age" class="ques" id="number-label">Age <span style="font-size: smaller">(optional)</span></label><br>
+            <input type="number" id="number" name="age" class=shadow-box min=0 max=200
+              placeholder="Age"><br>
           </div>
           <div class="form-element">
             <span class="ques">Which option best describes your current role?<br></span>
-            <select name="role" class=shadow-box>
+            <select name="role" class=shadow-box id="dropdown">
               <option selected disabled>Select current role</option>
               <option value="student">Student</option>
               <option value="job">Full Time Job</option>
@@ -123,7 +126,7 @@
             <textarea placeholder="Enter your comments here..." class=shadow-box></textarea>
           </div>
           <div class="form-element">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id="submit">
           </div>
         </form>
       </main>
