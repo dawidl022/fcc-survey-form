@@ -5,4 +5,5 @@ What I learnt:
 - Flexbox align-items: baseline is handy at times to perfectly align text.
 
 What I had difficulties with:
-- Having the page display nicely on mobile. This is still a TODO.
+- Having the page display nicely on mobile (all that was in fact needed was
+meta viewport tag).
